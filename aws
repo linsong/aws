@@ -1429,7 +1429,7 @@ sub s3
 	$verb = GET;
     }
 
-    my($ub, $uo, $uq) = $name =~ /^(.+?)(?:\/(.*?))?(\?(?:acl|location|logging|bittorrent|requestPayment))?$/s;
+    my($ub, $uo, $uq) = $name =~ /^(.+?)(?:\/(.*?))?(\?(?:acl|location|logging|bittorrent|requestPayment|versioning|versions))?$/s;
     my $uname = encode_url($ub) . "/" . encode_url($uo) . $uq if $name;
 
     if ($v >= 2)
